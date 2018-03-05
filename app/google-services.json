@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "653890248398",
+    "firebase_url": "https://messageapplication-3fa43.firebaseio.com",
+    "project_id": "messageapplication-3fa43",
+    "storage_bucket": "messageapplication-3fa43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653890248398:android:2eb4056ac661fa97",
+        "android_client_info": {
+          "package_name": "com.example.jonib.firebasechatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653890248398-nmktlpfmh6p161fj543kui0t9p46ufmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvXDdG-DKjuSp1oj1aeko_KhKUJYntmLo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

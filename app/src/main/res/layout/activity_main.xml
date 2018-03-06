@@ -22,16 +22,17 @@
         android:layout_alignParentBottom="true">
 
         <EditText
-            android:layout_width="330dp"
+            android:layout_width="300dp"
+            android:hint="Message"
             android:layout_height="wrap_content"
             android:id="@+id/editMessage"
             android:layout_marginRight="5dp"/>
 
         <android.support.design.widget.FloatingActionButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:clickable="true"
-            android:tint="@android:color/white"
+            app:fabSize="mini"
             android:src="@drawable/ic_send"
             android:onClick="sendButtonClicked" />
     </LinearLayout>

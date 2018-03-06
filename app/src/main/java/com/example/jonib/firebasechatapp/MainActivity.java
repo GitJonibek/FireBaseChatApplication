@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             mMessageList.scrollToPosition(mMessageList.getAdapter().getItemCount());
-
+            editMessage.setText("");
         }
     }
 

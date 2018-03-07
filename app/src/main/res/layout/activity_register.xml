@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/background_shape"
     android:id="@+id/activity_register"
     tools:context="com.example.jonib.firebasechatapp.RegisterActivity">
 
@@ -15,28 +17,39 @@
         android:text="Sign In"/>
 
     <EditText
+        android:layout_margin="3dp"
+        android:background="@drawable/message_shape"
+        android:padding="2sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Enter Email"
         android:id="@+id/editEmail"/>
 
     <EditText
+        android:layout_margin="3dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/message_shape"
+        android:padding="2sp"
         android:hint="Enter Username"
         android:id="@+id/editUsername"/>
 
     <EditText
+        android:layout_margin="3dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/message_shape"
+        android:padding="2sp"
         android:hint="Enter Password"
         android:inputType="textPassword"
         android:id="@+id/editPassword"/>
 
     <Button
+        android:layout_marginTop="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
+        android:background="@drawable/background_register_button_shape"
         android:id="@+id/btnSign_Up"
         android:onClick="signupButtonClicked"/>
 
@@ -44,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="login"
+        android:background="@drawable/background_Login_button_shape"
         android:onClick="loginButtonClicked"
         android:id="@+id/btnLogin"/>
 

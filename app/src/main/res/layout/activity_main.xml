@@ -24,6 +24,7 @@
         <EditText
             android:layout_width="300dp"
             android:hint="Message"
+            android:background="@drawable/background_shape"
             android:layout_height="wrap_content"
             android:id="@+id/editMessage"
             android:layout_marginRight="5dp"/>

@@ -57,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="login"
-        android:background="@drawable/background_Login_button_shape"
+        android:background="@drawable/background_login_button_shape"
         android:onClick="loginButtonClicked"
         android:id="@+id/btnLogin"/>
 

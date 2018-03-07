@@ -23,6 +23,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText editMessage;
@@ -91,6 +96,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        super.finish();
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
 
@@ -118,12 +129,22 @@ public class MainActivity extends AppCompatActivity {
 
         public void setContent(String content){
             TextView messageContent = mView.findViewById(R.id.messageText);
+            TextView time = mView.findViewById(R.id.messageTime);
             messageContent.setText(content);
+
+            DateFormat sdf = new SimpleDateFormat("HH:mm");
+            String currentDateandTime = sdf.format(Calendar.getInstance().getTime());
+            time.setText(currentDateandTime);
         }
 
         public void setUsername(String username){
             TextView username_content = mView.findViewById(R.id.usernameText);
+            TextView time = mView.findViewById(R.id.messageTime);
             username_content.setText(username);
+
+            DateFormat sdf = new SimpleDateFormat("HH:mm");
+            String currentDateandTime = sdf.format(Calendar.getInstance().getTime());
+            time.setText(currentDateandTime);
         }
 
     }
